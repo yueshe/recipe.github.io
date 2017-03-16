@@ -1,53 +1,117 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 	<head>
-		<title> Food for Thought</title>
-		<link rel="stylesheet" href="assets/css/style.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head 
+            content must come *after* these tags -->
+        
+		<title> Food for Thoughts</title>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="css/mystyle.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+        <!-- fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-		<script src="assets/masonry-docs/masonry.pkgd.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Jim+Nightshade|Josefin+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+        <!-- javascript -->
+		<script src="masonry-docs/masonry.pkgd.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
         </script> 
-		<script src = "assets/js/script.js"></script>
+		<script src = "js/script.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-
 	</head>
+
 	<body>
+        <header class="jumbotron">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12">
+                    <h1 style="text-align:center">Food for Thoughts</h1>
+                    <p style="text-align:center">cook out of box</p>
+                </div>
+            </div>
+        </header>
+        
 		<div class = "page-wrapper">
 			<section class = "section" id = "title-section">
 	            <div id = "header">
-	                <img src = "assets/img/raspberry_lemonade_ing.jpg" id = "header-img">
-	                <div id = "links">
-		                <div class = "header-link" id = "link2">
-		                	<span id="pop-up2" style="position: absolute; display: none;">
-		                		<img src = "assets/img/pot.jpg" id = "pop-up-img2">
+	                <img src = "img/raspberry_lemonade_ing.jpg" id = "header-img">
+		          <div class = "header-link" id = "link1">
+<!--
+                            <span id="pop-up2" style="position: absolute; display: none;">
+		                    <img src = "img/pot.jpg" id = "pop-up-img2">
 		                	</span>
-		                	<a href="#setting-section" class = "hlink">Settings</a>
-		                </div>
+-->
+		            	<a href="#setting-section" class = "hlink">Settings</a>
+                   </div>
 
-		                <div class = "header-link" id = "link1">
+                   <div class = "header-link" id = "link2">
+<!--
 		                	<span id="pop-up1" style="position: absolute; display: none;">
-		                		<img src = "assets/img/cooking.png" id = "pop-up-img1">
+		                		<img src = "img/cooking.png" id = "pop-up-img1">
 		                	</span>
-		                	<a href="#add-section" class = "hlink">Add</a>
-		                </div>
+-->
+	                	<a href="#add-section" class = "hlink">Add</a>
+		           </div>
 
-		                <div class = "header-link" id = "link3">
+		           <div class = "header-link" id = "link3">
+<!--
 		                	<span id="pop-up3" style="position: absolute; display: none;">
-		                		<img src = "assets/img/fork-knife.png" id = "pop-up-img3">
+		                		<img src = "fork-knife.png" id = "pop-up-img3">
 		                	</span>
+-->
 	                		<a href="#recipe-section" class = "hlink">Foods</a>
-	                	</div>
-
+                    </div>
+                    
+                    <div class = "image-link1" id = "link4">
+                        <img src = "img/pot.png" id = "pop-up-img2">
 		            </div>
+
+		            <div class = "image-link2" id = "link5">
+		              <img src = "img/fork_and_knife.png" id = "pop-up-img1">
+		            </div>
+
+		            <div class = "image-link3" id = "link6">
+		              <img src = "img/chicken.png" id = "pop-up-img3">
+                    </div>
 	            </div>
 	        </section>
-
+            
 	        <section class = "section" id = "recipe-section">
-	        <input type="text" name="search" placeholder="Search..">
+	           <input type="text" name="search" placeholder="Search..">
+                <div class="row row-content">
+                    <div class="col-xs-6 col-sm-4">
+                        <p style="padding:20px;"></p>
+                        <img src = "img/KFC.jpg" id = "KFC" height="200">
+                        <h3 align=center>KFC</h3>
+                        <p><a  href="#ChickenRecipe">List of Recipe </a></p>
+                        <p><a  href="#ChickCook">Cook Direction </a></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <p style="padding:20px;"></p>
+                        <img src = "img/KFC.jpg" id = "KFC" height="200">
+                        <h3 align=center>KFC</h3>
+                        <p><a  href="#">List of Recipient </a></p>
+                        <p><a  href="#">Cook Direction </a></p>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        <p style="padding:20px;"></p>
+                        <img src = "img/KFC.jpg" id = "KFC" height="200">
+                        <h3 align=center>KFC</h3>
+                        <p><a  href="#">List of Recipient </a></p>
+                        <p><a  href="#">Cook Direction </a></p>
+                    </div>
+                </div>
+
 	        </section>
 	    </div>
 	</body>
